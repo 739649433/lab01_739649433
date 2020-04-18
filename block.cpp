@@ -17,13 +17,24 @@ string block(int a, int b)
     return result;
 }
 
+
+
+
+
 int main(int argc, char *argv[])
 {
     int r;
     int c;
     cout << "Enter number of rows and columns:" << endl;
     cin >> r >> c;
-    cout << block(r,c);
+    while (r != 0 && c != 0)
+    {
+        cout << block(r,c);
+        cout << "Enter number of rows and columns:" << endl;
+        cin >> r >> c;
+
+    }
+
     return 0;
 }
 
